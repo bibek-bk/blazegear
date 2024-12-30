@@ -3,12 +3,14 @@ import Features from './components/Features'
 import Reviews from './components/Reviews'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
+import NewsSection from './components/NewsSection'
+import SignupForm from './components/SignupForm'
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-white">
       {/* Navigation */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-black">
+      <nav className="flex  items-center justify-between px-6 py-4 bg-black">
         <div className="flex items-center gap-4">
           <img src="https://placehold.co/40x40" alt="Blaze Gear Logo" className="w-10 h-10" />
           <h1 className="text-2xl font-bold">Blaze Gear</h1>
@@ -33,14 +35,14 @@ export default function App() {
             <ShoppingCart className="h-5 w-5" />
             <span>Cart (0)</span>
           </div>
-          <button className="px-4 py-2 bg-purple-600 rounded-md hover:bg-purple-700">
+          <button className="px-4 py-2 bg-gradient-to-t to-blue-950 from-black rounded-md ">
             Sign in
           </button>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <div className="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 bg-gradient-to-br from-[#2a2a2a] to-black rounded-lg mx-4 my-6">
+      <div className=" p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 bg-gradient-to-l to-blue-950 from-black rounded-lg ">
         <div className="lg:col-span-2 relative overflow-hidden rounded-lg bg-black p-8">
           <div className="relative z-10">
             <h2 className="text-5xl font-bold mb-4">Luxury Finds a<br />New Address</h2>
@@ -87,7 +89,7 @@ export default function App() {
       </div>
 
       {/* Products Section */}
-      <div className="px-6 py-12">
+      <div className="px-6 bg-gradient-to-r to-blue-950 from-black py-12">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold">Our products</h2>
           <div className="flex gap-4">
@@ -169,9 +171,11 @@ export default function App() {
           ))}
         </div>
       </div>
-      <Features/>
+      {/* <Features/> */}
       <Reviews/>
       <FAQ/>
+      <NewsSection/>
+      <SignupForm/>
       <Footer/>
     </div>
   )

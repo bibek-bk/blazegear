@@ -3,7 +3,6 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 export default function Footer() {
   const [email, setEmail] = useState('')
-  const [language, setLanguage] = useState('English')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -13,12 +12,12 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-violet-300 px-6 py-12 text-gray-800">
+    <footer className="bg-gradient-to-l to-blue-950 from-black px-6 py-12 ">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* About Section */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">About</h2>
+            <h2 className="text-lg font-semibold text-blue-600">About</h2>
             <ul className="space-y-2">
               {['Home', 'Shop', 'Our story', 'Blogs'].map((item) => (
                 <li key={item}>
@@ -35,7 +34,7 @@ export default function Footer() {
 
           {/* Help Section */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Help</h2>
+            <h2 className="text-lg font-semibold text-blue-600">Help</h2>
             <ul className="space-y-2">
               {['Shipping & Returns', 'Track Order', 'FAQs'].map((item) => (
                 <li key={item}>
@@ -52,7 +51,7 @@ export default function Footer() {
 
           {/* Contact Section */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Contact</h2>
+            <h2 className="text-lg font-semibold text-blue-600">Contact</h2>
             <ul className="space-y-2">
               <li>Phone:</li>
               <li className="font-medium">+97798</li>
@@ -63,7 +62,7 @@ export default function Footer() {
 
           {/* Newsletter Section */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Receive new promotions</h2>
+            <h2 className="text-lg font-semibold text-blue-600">Receive new promotions</h2>
             <form onSubmit={handleSubmit} className="space-y-3">
               <div className="flex flex-col sm:flex-row gap-2 w-full">
                 <input
@@ -105,18 +104,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 flex flex-col items-start justify-between space-y-4 border-t border-violet-400 pt-8 lg:flex-row lg:items-center lg:space-y-0">
-          <div className="flex items-center space-x-4">
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="rounded-md border border-violet-400 bg-white/90 px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500"
-            >
-              <option>English</option>
-              <option>Spanish</option>
-              <option>French</option>
-            </select>
-          </div>
+        <div className="mt-12 flex flex-col items-start justify-center space-y-4 border-t border-violet-400 pt-8 lg:flex-row lg:items-center lg:space-y-0">
+  
 
           <div className="text-sm">
             <span>© 2024 Brand, Inc.</span>
