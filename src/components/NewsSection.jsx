@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export default function NewsSection() {
   return (
-    <div className="bg-[#0a0a0a] h-[30rem]">
+    <div className="bg-[#0a0a0a]">
       <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
         {/* Left content */}
         <div className="lg:w-1/3 space-y-6">
