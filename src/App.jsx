@@ -42,7 +42,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <div className=" p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 bg-gradient-to-l to-blue-950 from-black rounded-lg ">
+      <div className=" p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 rounded-lg ">
         <div className="lg:col-span-2 relative overflow-hidden rounded-lg bg-black p-8">
           <div className="relative z-10">
             <h2 className="text-5xl font-bold mb-4">Luxury Finds a<br />New Address</h2>
@@ -89,7 +89,7 @@ export default function App() {
       </div>
 
       {/* Products Section */}
-      <div className="px-6 bg-gradient-to-r to-blue-950 from-black py-12">
+      <div className="px-6 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 py-12">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold">Our products</h2>
           <div className="flex gap-4">

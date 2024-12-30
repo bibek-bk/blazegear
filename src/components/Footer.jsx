@@ -12,7 +12,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-l to-blue-950 from-black px-6 py-12 ">
+    <footer className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 px-6 py-12 ">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* About Section */}
