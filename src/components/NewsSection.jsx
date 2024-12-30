@@ -25,7 +25,7 @@ export default function NewsSection() {
         {/* Right content - Image */}
         <div className="lg:w-2/3">
           <img 
-            src="/placeholder.svg?height=600&width=800" 
+            src="https://placehold.co/800x400" 
             alt="Apple devices showcase" 
             className="w-full h-auto rounded-lg"
           />
